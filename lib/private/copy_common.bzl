@@ -50,12 +50,8 @@ COPY_EXECUTION_REQUIREMENTS = {
     # Sandboxing for this action is wasteful as well since there is a 1:1 mapping of input
     # file/directory to output file/directory and no room for non-hermetic inputs to sneak in to the
     # input.
-    "no-remote": "1",
-    "no-remote-cache": "1",
     "no-remote-exec": "1",
-    "no-cache": "1",
     "no-sandbox": "1",
-    "local": "1",
 }
 
 def progress_path(f):
